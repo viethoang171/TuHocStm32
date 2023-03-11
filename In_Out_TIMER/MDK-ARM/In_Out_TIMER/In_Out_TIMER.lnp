@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"in_out_timer\startup_stm32f103xb.o"
+"in_out_timer\main.o"
+"in_out_timer\stm32f1xx_it.o"
+"in_out_timer\stm32f1xx_hal_msp.o"
+"in_out_timer\stm32f1xx_hal_gpio_ex.o"
+"in_out_timer\stm32f1xx_hal_tim.o"
+"in_out_timer\stm32f1xx_hal_tim_ex.o"
+"in_out_timer\stm32f1xx_hal.o"
+"in_out_timer\stm32f1xx_hal_rcc.o"
+"in_out_timer\stm32f1xx_hal_rcc_ex.o"
+"in_out_timer\stm32f1xx_hal_gpio.o"
+"in_out_timer\stm32f1xx_hal_dma.o"
+"in_out_timer\stm32f1xx_hal_cortex.o"
+"in_out_timer\stm32f1xx_hal_pwr.o"
+"in_out_timer\stm32f1xx_hal_flash.o"
+"in_out_timer\stm32f1xx_hal_flash_ex.o"
+"in_out_timer\stm32f1xx_hal_exti.o"
+"in_out_timer\system_stm32f1xx.o"
+--strict --scatter "In_Out_TIMER\In_Out_TIMER.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "In_Out_TIMER.map" -o In_Out_TIMER\In_Out_TIMER.axf

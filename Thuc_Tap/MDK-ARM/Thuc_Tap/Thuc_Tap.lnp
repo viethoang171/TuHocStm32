@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"thuc_tap\startup_stm32f103xb.o"
+"thuc_tap\ds3231.o"
+"thuc_tap\sg90.o"
+"thuc_tap\main.o"
+"thuc_tap\stm32f1xx_it.o"
+"thuc_tap\stm32f1xx_hal_msp.o"
+"thuc_tap\stm32f1xx_hal_gpio_ex.o"
+"thuc_tap\stm32f1xx_hal_i2c.o"
+"thuc_tap\stm32f1xx_hal.o"
+"thuc_tap\stm32f1xx_hal_rcc.o"
+"thuc_tap\stm32f1xx_hal_rcc_ex.o"
+"thuc_tap\stm32f1xx_hal_gpio.o"
+"thuc_tap\stm32f1xx_hal_dma.o"
+"thuc_tap\stm32f1xx_hal_cortex.o"
+"thuc_tap\stm32f1xx_hal_pwr.o"
+"thuc_tap\stm32f1xx_hal_flash.o"
+"thuc_tap\stm32f1xx_hal_flash_ex.o"
+"thuc_tap\stm32f1xx_hal_exti.o"
+"thuc_tap\stm32f1xx_hal_tim.o"
+"thuc_tap\stm32f1xx_hal_tim_ex.o"
+"thuc_tap\system_stm32f1xx.o"
+--strict --scatter "Thuc_Tap\Thuc_Tap.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Thuc_Tap.map" -o Thuc_Tap\Thuc_Tap.axf

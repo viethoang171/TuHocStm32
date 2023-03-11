@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"bai_tap_lon\startup_stm32f103xb.o"
+"bai_tap_lon\delay_timer.o"
+"bai_tap_lon\dht11.o"
+"bai_tap_lon\ds3231.o"
+"bai_tap_lon\main.o"
+"bai_tap_lon\stm32f1xx_it.o"
+"bai_tap_lon\stm32f1xx_hal_msp.o"
+"bai_tap_lon\stm32f1xx_hal_gpio_ex.o"
+"bai_tap_lon\stm32f1xx_hal_i2c.o"
+"bai_tap_lon\stm32f1xx_hal.o"
+"bai_tap_lon\stm32f1xx_hal_rcc.o"
+"bai_tap_lon\stm32f1xx_hal_rcc_ex.o"
+"bai_tap_lon\stm32f1xx_hal_gpio.o"
+"bai_tap_lon\stm32f1xx_hal_dma.o"
+"bai_tap_lon\stm32f1xx_hal_cortex.o"
+"bai_tap_lon\stm32f1xx_hal_pwr.o"
+"bai_tap_lon\stm32f1xx_hal_flash.o"
+"bai_tap_lon\stm32f1xx_hal_flash_ex.o"
+"bai_tap_lon\stm32f1xx_hal_exti.o"
+"bai_tap_lon\stm32f1xx_hal_tim.o"
+"bai_tap_lon\stm32f1xx_hal_tim_ex.o"
+"bai_tap_lon\system_stm32f1xx.o"
+--strict --scatter "Bai_tap_lon\Bai_tap_lon.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bai_tap_lon.map" -o Bai_tap_lon\Bai_tap_lon.axf

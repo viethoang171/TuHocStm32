@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"lower_mode\startup_stm32f103xb.o"
+"lower_mode\main.o"
+"lower_mode\stm32f1xx_it.o"
+"lower_mode\stm32f1xx_hal_msp.o"
+"lower_mode\stm32f1xx_hal_gpio_ex.o"
+"lower_mode\stm32f1xx_hal_tim.o"
+"lower_mode\stm32f1xx_hal_tim_ex.o"
+"lower_mode\stm32f1xx_hal.o"
+"lower_mode\stm32f1xx_hal_rcc.o"
+"lower_mode\stm32f1xx_hal_rcc_ex.o"
+"lower_mode\stm32f1xx_hal_gpio.o"
+"lower_mode\stm32f1xx_hal_dma.o"
+"lower_mode\stm32f1xx_hal_cortex.o"
+"lower_mode\stm32f1xx_hal_pwr.o"
+"lower_mode\stm32f1xx_hal_flash.o"
+"lower_mode\stm32f1xx_hal_flash_ex.o"
+"lower_mode\stm32f1xx_hal_exti.o"
+"lower_mode\system_stm32f1xx.o"
+--strict --scatter "Lower_Mode\Lower_Mode.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Lower_Mode.map" -o Lower_Mode\Lower_Mode.axf

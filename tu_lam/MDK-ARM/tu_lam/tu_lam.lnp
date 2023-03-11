@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"tu_lam\startup_stm32f103xb.o"
+"tu_lam\main.o"
+"tu_lam\stm32f1xx_it.o"
+"tu_lam\stm32f1xx_hal_msp.o"
+"tu_lam\stm32f1xx_hal_gpio_ex.o"
+"tu_lam\stm32f1xx_hal_tim.o"
+"tu_lam\stm32f1xx_hal_tim_ex.o"
+"tu_lam\stm32f1xx_hal.o"
+"tu_lam\stm32f1xx_hal_rcc.o"
+"tu_lam\stm32f1xx_hal_rcc_ex.o"
+"tu_lam\stm32f1xx_hal_gpio.o"
+"tu_lam\stm32f1xx_hal_dma.o"
+"tu_lam\stm32f1xx_hal_cortex.o"
+"tu_lam\stm32f1xx_hal_pwr.o"
+"tu_lam\stm32f1xx_hal_flash.o"
+"tu_lam\stm32f1xx_hal_flash_ex.o"
+"tu_lam\stm32f1xx_hal_exti.o"
+"tu_lam\system_stm32f1xx.o"
+--strict --scatter "tu_lam\tu_lam.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tu_lam.map" -o tu_lam\tu_lam.axf
